@@ -8,15 +8,21 @@
 label {
     display: inline-block;
     width: 150px; 
-    
+    font: bold;
     margin-right: 25px;
   }
+
   .form-group{
     margin-bottom: 6px;
   }
   select{
     margin-bottom: 6px;
   }
+  fieldset{
+    margin: 100px auto;
+    width: 500px;
+  }
+  
 
   
 </style>
@@ -45,13 +51,13 @@ label {
             <input type ="radio" nama="perusahaan/organisasi" value="perusahaan/organisasi">perusahaan/organisasi</br>              
             <br>
 
-            <div class ="form-group">
-                <label for = "deskripsikebutuhan"><b>Deskirpsi Kebutuhan:</b></label>
-                <textarea name ="deskripsikebutuhan" id="deskripsikebutuhan"></textarea>
+            <div class ="form-group1">
+                <label for = "deskripsi">Deskirpsi Kebutuhan:</label>
+                <textarea name="dekripsi" id="deskripsi" cols="30" rows="2"></textarea>
             </div>
 
    <div class ="form-group">
-    <label for = "date"><b>Jam.Tanggal Service :</b></label>
+    <label for = "date"><b>Jam Tanggal Service: </b></label>
     <input type ="date" id="date">
     </div>
 
@@ -73,4 +79,3 @@ label {
         </form> 
 </body>
 </html>
- 
