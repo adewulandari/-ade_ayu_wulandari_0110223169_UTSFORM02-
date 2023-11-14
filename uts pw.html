@@ -4,6 +4,22 @@
       <meta charset="UTF-8">
       <meta name="viewsport" content ="width=dev-width, initial=scale=1,0">
       <title> Document </title>
+      <style>        
+label {
+    display: inline-block;
+    width: 150px; 
+    
+    margin-right: 25px;
+  }
+  .form-group{
+    margin-bottom: 6px;
+  }
+  select{
+    margin-bottom: 6px;
+  }
+
+  
+</style>
 </head>
 <body>
       <fieldset>
@@ -11,52 +27,50 @@
             <h2> Booking Service </h2>
                 </legend>
                 <div class="form-group">
-                    <label for="Jenis kendaraan">Jenis kendaraan:</label>
+                    <label for="Jenis kendaraan"><b>Jenis kendaraan:</b></label>
                     <select name="jenis_kendaraan" id="jenis_kendaraan">
                         <option value="minibus">minibus</option>
                         <option value="kereta api">kereta api</option>
-                    </select>
+                        </select>
         <br>
         <div class ="form-group">
-            <label for ="Nama pemesan">Nama pemesan:</label>
+            <label for ="Nama pemesan"><b>Nama pemesan:</b></label>
             <input type ="Nama pemesan" id="">
-                  </div>
+            </div>
         
-             <label for ="Kategori Peminjam" >kategori peminjam:</label><br>
+        
+             <label for ="Kategori Peminjam"><b>kategori peminjam: </b></label>
              <td>
-            <input type ="radio" nama:"pribadi" value: "pribadi">pribadi
-            <input type ="radio" nama:"perusahaan/organisasi" value: "perusahaan/organisasi">perusahaan/organisasi              
-        <br>
-        <label for ="deskripsikebutuhan"><b>Deskripsi Kebutuhan : </b></label>
-        <textarea name ="deskripsikebutuhan" id="deskripsikebutuhan" cols="30" rows="3"> 
-     </textarea>
-                </div>
+            <input type ="radio" nama="pribadi" value="pribadi" >pribadi 
+            <input type ="radio" nama="perusahaan/organisasi" value="perusahaan/organisasi">perusahaan/organisasi</br>              
+            <br>
+
+            <div class ="form-group">
+                <label for = "deskripsikebutuhan"><b>Deskirpsi Kebutuhan:</b></label>
+                <textarea name ="deskripsikebutuhan" id="deskripsikebutuhan"></textarea>
+            </div>
 
    <div class ="form-group">
-    <label for = Jam,Tanggal Service>Jam,Tanggal Service":</label>
+    <label for = "date"><b>Jam.Tanggal Service :</b></label>
     <input type ="date" id="date">
-          </div>
+    </div>
 
-<div class ="form-group">
-    <label for ="Request Monir">Request Monir:</label>
-    <input type ="Request Monir" id="Request Monir">
-          </div>
 
 <div class="form-group">
-    <label for="telpon">No HP/Telpon:</label>
+    <label for="telpon"><b>No HP/Telpon: </b></label>
     <input type="number" id="telpon">
-          </div>
+</div>
 
 <div class="form-group">
-    <label for="Email">Email:</label>
+    <label for="Email"><b>Email: </b></label>
     <input type="email" id="email">
-          </div>
+</div>
 
-<div class="form-group">
-    <button type="button" style="background-color: rgb(255, 255, 255);">Daftar</button>
-    <button type="button" style="background-color: rgb(255, 255, 255);">Batal</button>
-          </div>
+<input type="submit" value="submit">
+<input type="reset" value="reset">
+
         </br>  
         </form> 
 </body>
 </html>
+ 
